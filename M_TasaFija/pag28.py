@@ -31,3 +31,12 @@ print("Costo del activo: ", C)
 print("Vida util del activo: ", N)
 print("Tasa de depreciacion anual: ", d)
 print("Valor de salvamento: ", S)
+
+#graficamos la tabla
+import matplotlib.pyplot as plt
+plt.plot(Dt, label="Depreciacion")
+plt.plot(Da, label="Depreciacion acumulada")
+plt.plot(V, label="Valor del activo")
+plt.legend()
+plt.show()
+
